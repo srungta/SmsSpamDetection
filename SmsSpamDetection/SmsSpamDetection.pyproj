@@ -22,6 +22,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="cleanup.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\common\configs.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="src\common\constants.py">
       <SubType>Code</SubType>
     </Compile>
@@ -45,8 +51,11 @@
   <ItemGroup>
     <Folder Include="D:\Github\srungta.github\SmsSpamDetection\SmsSpamDetection\input\" />
     <Folder Include="D:\Github\srungta.github\SmsSpamDetection\SmsSpamDetection\output\" />
+    <Folder Include="input\" />
+    <Folder Include="output\" />
     <Folder Include="src\" />
     <Folder Include="src\common\" />
+    <Folder Include="staging\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

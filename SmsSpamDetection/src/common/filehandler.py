@@ -12,3 +12,6 @@ def ensure_path_exists(directory_path):
     if path.exists(directory_path):
         return
     makedirs(directory_path)
+
+def get_file_name(directory, filename):
+    return path.join(directory, filename)
