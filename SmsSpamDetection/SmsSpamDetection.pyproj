@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>93e3c53c-9398-4e21-9968-d32c7ebba897</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SmsSpamDetection.py</StartupFile>
+    <StartupFile>src\SmsSpamDetection.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>SmsSpamDetection</Name>
     <RootNamespace>SmsSpamDetection</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda36-64</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +22,31 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="SmsSpamDetection.py" />
+    <Compile Include="src\common\constants.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\common\datahandler.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\common\experiment.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\common\filehandler.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\common\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\SmsSpamDetection.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda36-64" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="D:\Github\srungta.github\SmsSpamDetection\SmsSpamDetection\input\" />
+    <Folder Include="D:\Github\srungta.github\SmsSpamDetection\SmsSpamDetection\output\" />
+    <Folder Include="src\" />
+    <Folder Include="src\common\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
